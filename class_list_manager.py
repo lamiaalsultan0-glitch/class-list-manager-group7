@@ -12,7 +12,16 @@ def sort_names(names):
 # Written by: Jory Al-subaie
 def count_names(names):
     return len(names)
+    
+# Written by: Ghala Alamri
+def names_starting_with(names, letter):
+    result = []
 
+    for name in names:
+        if name.lower().startswith(letter.lower()):
+            result.append(name)
+
+    return result
 
 
 def main():
@@ -22,5 +31,7 @@ def main():
     # print("Number of names:", count_names(names))
     print("Sorted names:", sort_names(names))
     print("Number of names:", count_names(names))
+    print("Names starting with L:", names_starting_with(names, "L"))
+    
 
 main()
