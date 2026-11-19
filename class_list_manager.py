@@ -4,7 +4,13 @@
 names = ["Sara", "Noura", "Lama", "Reem", "Amal", "Lama"]
 
 
-# ===== Each student adds her function BELOW this line =====
+# Written by: Nourah Alhazzani
+def search_name(names, name):
+    if name in names:
+        return True
+    else:
+        return False
+
 # Written by: Lamia Al-sultan
 def sort_names(names):
     return sorted(names)
@@ -32,6 +38,6 @@ def main():
     print("Sorted names:", sort_names(names))
     print("Number of names:", count_names(names))
     print("Names starting with L:", names_starting_with(names, "L"))
-    
+    print("Search for Noura:", search_name(names, "Noura"))
 
 main()
